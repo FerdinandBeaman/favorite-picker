@@ -440,8 +440,11 @@ var items = [
 {id: "X-Men First Class"}
     ];
 
-
-
+var myPicker = new picker.Picker({
+    items: items,
+    localStorageKey: 'picker-state-2'
+});
+    
 var pickerUI = new PickerUI(myPicker, {
     elements: {
         pick: "#pick",
